@@ -1,0 +1,157 @@
+/* General Styles */
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+}
+.bg-sea-green{
+	background-color: #7bc798;
+}
+.text-sea-green{
+	color: #7bc798;
+}
+.text-forest-green{
+	color: #286a2a;
+}
+.small-underline-red:after{
+	position: absolute;
+	display: block;
+	content: '';
+	width: 51px;
+	height: 3px;
+	background: red;
+	left: 0;
+	right: 0;
+	margin: 3px auto 0;
+}
+.parallax.concert{
+  /* The image used */
+  background-image: url("/img/concert-1.jpeg");
+  /* Set a specific height */
+  height: 500px;
+}
+.parallax.bands{
+  /* The image used */
+  background-image: url("/img/bands.jpeg");
+}
+.parallax.ripe-banner{
+  /* The image used */
+  background-image: url("/img/banner.png");
+	height: 500px;
+	background-attachment: scroll;
+}
+.parallax.peach-pit{
+  /* The image used */
+  background-image: url("/img/peach-pit-2.png");
+	height: 500px;
+	background-position: top;
+	background-attachment: scroll;
+}
+.absolute-container{
+	width: 100%;
+	position: absolute;
+	border-right: 10px solid transparent;
+	border-left: 10px solid transparent;
+	box-sizing: border-box;
+}
+.absolute-container.title{
+	top: 35%;
+}
+.absolute-container.center{
+	top: 50%;
+}
+.absolute-container.buttons{
+	top: 60%;
+}
+.absolute-container.bottom{
+	bottom: 0;
+}
+.absolute-container.bottom{
+	bottom: 0;
+}
+.title-bar{
+	background-color: black;
+	color: white;
+	padding: 15px;
+	font-weight: normal;
+	letter-spacing: 10px;
+	font-style: oblique;
+	display: inline-block;
+}
+.band-box,
+.band-box .band-name,
+.band-box .band-content{
+	height: 220px;
+	overflow: hidden;
+	position: relative;
+	transition: transform 300ms ease-in-out;
+	will-change: transform;
+	box-sizing: border-box;
+}
+.band-box .band-name,
+.band-box .band-content{
+	padding: 30px;
+	display: table-row;
+}
+.band-box .band-cell{
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 30px;
+}
+.band-box h2,
+.band-box p{
+	font-weight: normal;
+	line-height: 1.3em;
+}
+.band-box:hover .band-name,
+.band-box:hover .band-content{
+	transform: translateY(-100%);
+}
+.news-section .news-block{
+	position: relative;
+	padding: 0 20px;
+	height: 200px;
+	line-height: 200px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.news-section .news-block a{
+	position: relative;
+    color: #000;
+}
+.news-section .news-block.guydancing{
+    background-image: url("/img/gd-banner.jpg");
+}
+.news-section .news-block.cigdevil{
+    background-image: url("/img/cd-banner.jpg");
+}
+.news-section .news-block.townbands{
+    background-image: url("/img/bit_banner.png");
+	background-position: top;
+}
+.news-section .news-block.nopupils{
+    background-image: url("/img/np-banner.jpg");
+}
+.news-section .news-block.orange{
+    background-image: url("/img/op-banner.jpg");
+}
+.news-section .news-block.hyper{
+    background-image: url("/img/hb-banner.jpg");
+	background-position: bottom;
+}
+
+@media screen and (min-width: 1200px){
+}
+@media screen and (min-width: 725px) and (max-width: 1200px) {
+	.parallax.peach-pit{
+		height: 400px;
+	}
+}
+@media screen and (min-width: 0px) and (max-width: 725px) {
+	.parallax.peach-pit{
+		height: 350px;
+	}
+}
